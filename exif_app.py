@@ -35,7 +35,7 @@ def extract_gps_info(exif_data):
         return None, None
 
 # Upload image
-uploaded_file = st.file_uploader("Upload an image (JPEG, JPG, PNG)", type=["jpg", "jpeg", "png"])
+uploaded_file = st.file_uploader("Upload an image")
 
 if uploaded_file:
     image = Image.open(uploaded_file)
